@@ -1,2 +1,2 @@
-# online_reliable_semi-supervised_learning_on_evolving_data_streams
+# Semi-supervised Data Stream Classification
 Online Reliable Semi-supervised Learning on Evolving Data Streams
