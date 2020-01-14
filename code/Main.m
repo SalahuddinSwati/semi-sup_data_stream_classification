@@ -52,9 +52,9 @@
         test_size=size(test_data,1); %size of test stream
 
         no_label_data=ceil(label_per*test_size/100);
-        r=randperm(test_size,no_label_data);
+        rno=randperm(test_size,no_label_data);
         test_data_labels=[test_data_labels zeros(1,test_size)'];
-        test_data_labels(r,2)=1;
+        test_data_labels(rno,2)=1;
         
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
