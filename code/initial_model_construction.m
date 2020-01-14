@@ -1,5 +1,5 @@
 function [Model]=initial_model_construction(data,train_class_labels)
-
+%hjjkj
 global num_cluster;
 train_data=data(:,1:end-1);
 train_data_labels=data(:,end);
