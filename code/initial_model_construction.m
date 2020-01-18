@@ -42,16 +42,12 @@ for i=1:size(train_class_labels,1)
         micro_clu{1,3}=N_pt;
         
         micro_clu{1,4}=train_class_labels(i); %mc label
-        
-        micro_clu{1,5}=LS; %CLS
-        micro_clu{1,6}=SS; %CSS
-        micro_clu{1,7}=N_pt; %class points
-         micro_clu{1,8}=LS/N_pt; %center
-        micro_clu{1,9}=clu_r; %radius
-        micro_clu{1,10}=0; %LT
-        micro_clu{1,11}=0; %ST
-        micro_clu{1,12}=0; %time
-        micro_clu{1,13}=1; %importance
+
+        micro_clu{1,5}=1; %label flg
+         micro_clu{1,6}=LS/N_pt; %center
+        micro_clu{1,7}=clu_r; %radius
+        micro_clu{1,8}=0; %time
+        micro_clu{1,9}=1; %importance
         Model(a,:)=micro_clu;
         a=a+1;
        

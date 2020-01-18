@@ -5,8 +5,8 @@
 
     global acc_win_max_size;
     global num_of_knn;
-    clu_cent=cell2mat(Model(:,8));
-    label_clu_cen=find(cell2mat(Model(:,7))~=0);
+    clu_cent=cell2mat(Model(:,6));
+    label_clu_cen=find(cell2mat(Model(:,5))~=0);
     clu_cent=clu_cent(label_clu_cen,:);
     [V widx]=max(weight);
     knn=[1;3;5;7;9;11];

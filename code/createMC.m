@@ -5,7 +5,7 @@
 
     if size(Model_temp,1)>=maxMC
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        ulabel_clu_cen=find(cell2mat(Model_temp(:,7))==0);
+        ulabel_clu_cen=find(cell2mat(Model_temp(:,5))==0);
         if size(ulabel_clu_cen,1)>1
             [ Model_temp ] = mergMCul( Model_temp );
         else
@@ -26,26 +26,19 @@
     % clu_r=sqrt(sum(SS/N_pt)-sum((LS/N_pt).^2));
     micro_clu{1,1}=LS;
     micro_clu{1,2}=SS;
-    micro_clu{1,3}=1; %total points in ms
+    micro_clu{1,3}=1; %total points in mc
     if ex.label_flg==1
         micro_clu{1,4}=ex.label; %mc label
-        micro_clu{1,5}=LS; %CLS
-        micro_clu{1,6}=SS;% CSS
-        micro_clu{1,7}=1; % total points of class
+        micro_clu{1,5}=1; % label flg
     else
         micro_clu{1,4}=0;
-        micro_clu{1,5}=LSC;
-        micro_clu{1,6}=LSC;
-        micro_clu{1,7}=0;
+        micro_clu{1,5}=0;
     end
-    micro_clu{1,8}=LS; %mc center
+    micro_clu{1,6}=LS; %mc center
 
-    micro_clu{1,9}=r; %mc radius
-
-    micro_clu{1,10}=currentTime; %LT
-    micro_clu{1,11}=currentTime.^2; %ST
-    micro_clu{1,12}=currentTime; %current time
-    micro_clu{1,13}=1; %importance
+    micro_clu{1,7}=r; %mc radius
+    micro_clu{1,8}=currentTime; %current time
+    micro_clu{1,9}=1; %importance
     a=size(Model_temp,1);
     Model_temp(a+1,:)=micro_clu;
 
