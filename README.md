@@ -14,7 +14,9 @@ Step 1. input "data.mat";  Step 2. run Main.m.
 
 -------------------------------------------------------------------------------------------------------------------------------
 
-Reference: Here.
+Reference: Salah Ud Din, Junming Shao, Jay Kumar, Waqar Ali, Jiaming Liu, Yu Ye,
+Online Reliable Semi-supervised Learning on Evolving Data Streams, Information Sciences, 2020,
+https://doi.org/10.1016/j.ins.2020.03.052.
 
 -------------------------------------------------------------------------------------------------------------------------------
 ATTN: This code were developed by Salah Ud Din (salahuddin@std.uestc.edu.cn). For any problem and suggestment, please feel free to contact Mr. Salah Ud Din.
